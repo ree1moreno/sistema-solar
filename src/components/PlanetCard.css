@@ -1,0 +1,31 @@
+.planet-card-name {
+  color: white;
+  font-family: 'Baloo 2', cursive;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.planet-card-image {
+  cursor: pointer;
+}
+
+.gif {
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+}
+
+@media (max-width: 620px) {
+  .gif {
+    width: 400px;
+  }
+}
+
+@media (max-width: 460px) {
+  .gif {
+    width: 350px;
+  }
+}

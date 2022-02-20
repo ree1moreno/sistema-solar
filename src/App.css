@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Gruppo&display=swap');
+
+/* font-family: 'Baloo 2', cursive; */
+
+/* font-family: 'Gruppo', cursive; */
+
+@import './components/Header.css';
+
+@import './components/PlanetCard.css';
+
+@import './components/Title.css';
+
+@import './components/SolarSystem.css';
+
+@import './components/MissionCard.css';
+
+@import './components/Modal.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  position: relative;
+}
+
+html:after {
+  background-image: url('./images/background.png');
+  background-position: center center;
+  background-size: cover;
+  bottom: 0;
+  content: '';
+  left: 0;
+  opacity: 0.98;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+a {
+  color: rgb(243, 243, 243);
+  text-decoration: none;
+}
+
+footer {
+  color: rgb(243, 243, 243);
+  font-family: 'Gruppo', cursive;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer p a:hover {
+  color: rgb(84, 84, 228);
+}
