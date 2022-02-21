@@ -7,23 +7,6 @@ export default function PlanetCard({ planetName, planetImage, planetGif }) {
 
   return (
     <div data-testid="planet-card">
-      <div>
-        {/* <p
-          className="planet-card-name"
-          data-testid="planet-name"
-        >
-          {planetName}
-        </p>
-        <button
-          type="button"
-          onClick={ () => setIsModalVisible(true) }
-        >
-          <img
-            className="planet-card-image"
-            src={ planetImage }
-            alt={ `Planeta ${planetName}` }
-          />
-        </button> */}
         {
           isModalVisible ? (
             <Modal onClose={ () => setIsModalVisible(false) }>
@@ -34,7 +17,7 @@ export default function PlanetCard({ planetName, planetImage, planetGif }) {
               />
             </Modal>
           ) : (
-            <div>
+            <>
               <p
                 className="planet-card-name"
                 data-testid="planet-name"
@@ -51,10 +34,9 @@ export default function PlanetCard({ planetName, planetImage, planetGif }) {
                   alt={ `Planeta ${planetName}` }
                 />
               </button>
-            </div>
+            </>            
           )
         }
-      </div>
     </div>
   );
 }

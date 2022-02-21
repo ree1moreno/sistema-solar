@@ -5,27 +5,31 @@
   font-weight: 600;
   padding: 0.5rem 0;
   text-align: center;
+  width: 480px;
 }
 
 .planet-card-image {
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
 
 .gif {
   border-radius: 10px;
   display: block;
+  height: 510px;
   margin: 0 auto;
-  width: 500px;
+  width: 370px;
 }
 
-@media (max-width: 620px) {
+@media (max-width: 1000px) {
   .gif {
-    width: 400px;
+    transform: scale(0.8);
   }
 }
 
 @media (max-width: 460px) {
   .gif {
-    width: 350px;
+    transform: scale(0.65);
   }
 }

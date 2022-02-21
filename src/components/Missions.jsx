@@ -5,7 +5,7 @@ import missions from '../data/missions';
 
 export default function Missions() {
   return (
-    <div data-testid="missions">
+    <div className="missions" data-testid="missions">
       <Title headline="Missões" />
       <div className="mission-card-area">
         {

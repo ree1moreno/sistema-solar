@@ -62,3 +62,23 @@ footer {
 footer p a:hover {
   color: rgb(84, 84, 228);
 }
+
+.missions {
+  padding: 1rem;
+}
+
+.mySwiper {
+  padding: 8rem;
+}
+
+@media (max-width: 600px) {
+  .mySwiper {
+    padding: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mySwiper {
+    padding: 1.5rem;
+  }
+}
